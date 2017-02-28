@@ -17,7 +17,7 @@
             
         return this.each(function() {
             var $img = $('<img>');
-            $img.on('load', function() {
+            $img.on('load error', function() {
                 cnt++;
                 if (cnt === len) {
                     callback($this);
